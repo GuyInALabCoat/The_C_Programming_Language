@@ -15,11 +15,11 @@ main()
 
 	while((c = getchar()) != EOF)
 	{
-		if ( 97 <= c && c <= 122 )
+		if ( 'a' <= c && c <= 'z' )
 		{
 			++alphabet[c - 'a'];
 		}
-		else if ( 65 <= c && c <= 90 )
+		else if ( 'A' <= c && c <= 'Z' )
 		{
 			++alphabet[c - 'A'];
 		}
@@ -29,7 +29,7 @@ main()
 
 	for (j = 0; j < ALPHABET_SIZE; j++)
 	{
-		printf("%3c |", (j + 97));
+		printf("%3c |", (j + 'a'));
 		{
 			for (k = 0; k < alphabet[j]; k++)
 			{
